@@ -1,217 +1,381 @@
 <!doctype html>
 <html lang="en" dir="ltr" data-bs-theme="auto">
 <head>
-
-    <!-- Include JavaScript for color modes -->
     <script src="./assets/js/color-modes.js"></script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Update the 'content' attribute to reflect the actual content description -->
-    <meta name="description" content="your_description_goes_here">
-
-    <!-- Modify the 'content' attribute to include appropriate keywords -->
-    <meta name="keywords" content="your_keywords_goes_here">
-
-    <meta name="author" content="tigmatemplate">
+    <meta name="description" content="Nexora IT Solutions delivers scalable cybersecurity, managed IT, and cloud automation services that keep small and medium businesses secure and efficient.">
+    <meta name="keywords" content="Nexora IT Solutions, cybersecurity services, managed IT, cloud automation, SMB technology partner">
+    <meta name="author" content="Nexora IT Solutions">
     <meta name="generator" content="Bootstrap">
-
-    <!-- Change the text within the <title> tag to match the webpage's content -->
-    <title> your_title_goes_here </title>
-
-    <!-- 
-        Set the website's favicon and Apple touch icon using the files in the assets/logo folder. You can change these files to your own icons by replacing them with the same names and sizes.
-
-        Be careful if you change the site.webmanifest file, as you need to update the src attribute of the icons array to match the new path of your icon files. Otherwise, your icons may not display correctly on some devices. 
-    -->
+    <title>Nexora IT Solutions | Managed IT & Cybersecurity</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon-16x16.png">
 	<link rel="icon" type="image/x-icon" href="./assets/logo/favicon.ico">
 	<link rel="manifest" href="./assets/logo/site.webmanifest">
-
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="./assets/libraries/aos/aos.css">
     <link rel="stylesheet" href="./assets/css/main.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-
-    <!-- Open Graph Meta Tags for Social Sharing -->
-    <!-- Update the 'title' and 'description' content below to enhance social sharing -->
-    <meta property="og:title" content="your_title_goes_here">
-    <meta property="og:description" content="your_description_goes_here">
-    <!-- Update with actual absolute image URL like: https://example.com/main.jpg -->
-    <meta property="og:image" content="your_absolute_image_url_goes_here">
-    <!-- Update with the absolute URL of the content like: https://example.com/index.html -->
-    <meta property="og:url" content="your_absolute_content_url_goes_here">
-    <!-- Update with the type of object you’re sharing. (e.g., article, website, etc.) -->
+    <meta property="og:title" content="Nexora IT Solutions | Managed IT & Cybersecurity">
+    <meta property="og:description" content="Scalable cybersecurity, managed IT infrastructure, and cloud automation for growing businesses.">
+    <meta property="og:image" content="./assets/logo/ChatGPT Image Nov 12, 2025, 04_02_14 PM.png">
+    <meta property="og:url" content="./index.html">
     <meta property="og:type" content="website">
-    <!-- Defines the content language -->
     <meta property="og:locale" content="en_US">
-
-    
-    <!-- X/Twitter Card Meta Tags for Social Sharing -->
     <meta name="twitter:card" content="summary_large_image">
-    <!-- Update with your X/Twitter handle -->
-    <meta name="twitter:site" content="@yourtwitterhandle"> 
-    <!-- Update the 'title' and 'description' content below to enhance social sharing -->
-    <meta name="twitter:title" content="your_title_goes_here"> 
-    <meta name="twitter:description" content="your_description_goes_here">
-    <!-- Update with actual absolute image URL like: https://example.com/main.jpg -->
-    <meta name="twitter:image" content="your_absolute_image_url_goes_here"> 
-    
-    <!-- 
-        The following line specifies the canonical URL for this page.
-        Replace your_canonical_url_goes_here with the actual canonical URL if needed like: https://example.com/index.html
-        Or just remove it!!!!
-    -->
-    <link rel="canonical" href="your_canonical_url_goes_here">
-
+    <meta name="twitter:site" content="@NexoraIT">
+    <meta name="twitter:title" content="Nexora IT Solutions">
+    <meta name="twitter:description" content="We help SMBs operate securely and efficiently with managed IT and automation.">
+    <meta name="twitter:image" content="./assets/logo/ChatGPT Image Nov 12, 2025, 04_02_14 PM.png">
 </head>
 <body>
-
-
-    <!-- loader-wrapper -->
     <div class="loader-wrapper">
         <div class="spinner-border text-primary p-5" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
 
+    <header class="py-3">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/logo/ChatGPT Image Nov 12, 2025, 04_02_14 PM.png" height="40" alt="Nexora IT Solutions logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="primaryNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item mt-3 mt-lg-0">
+                        <a class="btn btn-outline-primary btn-sm px-3 fw-semibold" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="dropdown ms-lg-3 mt-3 mt-lg-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+                        <symbol id="check2" viewBox="0 0 16 16">
+                            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                        </symbol>
+                        <symbol id="circle-half" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+                        </symbol>
+                        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                        </symbol>
+                        <symbol id="sun-fill" viewBox="0 0 16 16">
+                            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                        </symbol>
+                    </svg>
+                    <button class="btn btn-primary text-white btn-sm rounded dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                        <svg fill="currentColor" class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-hover end-0 p-1 rounded-3 bg-body-tertiary shadow" style="--bs-dropdown-min-width: 9rem;" aria-labelledby="bd-theme-text">
+                        <li style="color: var(--bs-tertiary-bg);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="d-inline-block position-absolute top-0 end-0 translate-middle mt-n1" viewBox="0 0 16 16">
+                                <path class="carret-dropdown-path" d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center rounded-1" data-bs-theme-value="light" aria-pressed="false">
+                                <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                                Light
+                                <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center rounded-1 my-1" data-bs-theme-value="dark" aria-pressed="false">
+                                <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                                Dark
+                                <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center rounded-1 active" data-bs-theme-value="auto" aria-pressed="true">
+                                <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                                Auto
+                                <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-	<!-- header top -->
-	<div class="py-4">
-		<nav class="container">
-			<div class="d-flex justify-content-between align-items-center">
-				<a href="./index.html">
-					<img src="./assets/logo/logo.png" height="40" alt="logo">
-				</a>
+    <main>
+        <section class="py-6 py-lg-8">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="badge text-bg-primary bg-opacity-10 text-primary-emphasis px-3 py-2 fw-semibold mb-3">Secure. Managed. Automated.</span>
+                        <h1 class="display-5 fw-bold text-body-emphasis mb-4">Technology foundations that help your business move faster—without sacrificing security.</h1>
+                        <p class="lead text-body-secondary mb-4">Nexora IT Solutions provides scalable technology services for small and medium businesses. We specialize in cybersecurity, managed IT infrastructure, and cloud automation so your teams can focus on growth, not maintenance.</p>
+                        <div class="d-flex flex-column flex-sm-row gap-3">
+                            <a class="btn btn-primary btn-lg text-white px-4" href="./pricing.html">View Pricing</a>
+                            <a class="btn btn-outline-primary btn-lg px-4" href="#contact">Talk to an expert</a>
+                        </div>
+                        <div class="mt-5">
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li class="d-flex align-items-start gap-2">
+                                    <span class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                                            <path d="M5.072 0a.5.5 0 0 0-.357.15l-2.5 2.5A.5.5 0 0 0 2 2.5V5c0 4.418 2.63 7.167 5.466 8.682a.5.5 0 0 0 .468 0C10.37 12.167 13 9.418 13 5V2.5a.5.5 0 0 0-.146-.354l-2.5-2.5A.5.5 0 0 0 10 0H5.072z"/>
+                                            <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                        </svg>
+                                    </span>
+                                    <span>Cybersecurity programs tailored to compliance and risk tolerance.</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-2">
+                                    <span class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-hdd-network" viewBox="0 0 16 16">
+                                            <path d="M4 0a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v2.535A1.5 1.5 0 0 0 4 11.5 1.5 1.5 0 0 0 2.5 13h-1a.5.5 0 0 0 0 1h1A2.5 2.5 0 0 0 5 11.5a.5.5 0 0 0 .5-.5V9h5v2a.5.5 0 0 0 .5.5 2.5 2.5 0 0 0 2.5 2.5h1a.5.5 0 0 0 0-1h-1A1.5 1.5 0 0 1 11 11.5a1.5 1.5 0 0 1-1-1.415V7h1a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                                        </svg>
+                                    </span>
+                                    <span>Fully managed infrastructure, monitoring, and automated updates.</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-2">
+                                    <span class="text-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cloud-check" viewBox="0 0 16 16">
+                                            <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.934 1.923 5.357 4.432C14.804 6.887 16 8.221 16 9.856 16 11.573 14.573 13 12.856 13H5.5a3.5 3.5 0 0 1-1.094-6.829z"/>
+                                            <path d="M10.97 7.97a.75.75 0 1 1 1.07 1.05l-3 3a.75.75 0 0 1-1.08.02l-1.5-1.5a.75.75 0 0 1 1.06-1.06l.97.97 2.48-2.48z"/>
+                                        </svg>
+                                    </span>
+                                    <span>Cloud automation workflows that eliminate repetitive provisioning tasks.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="p-4 p-sm-5 bg-body-tertiary rounded-4 shadow position-relative">
+                            <div class="ratio ratio-16x9 rounded-3 overflow-hidden border">
+                                <img src="./assets/img/screenshots/laptop.jpg" class="w-100 h-100 object-fit-cover" alt="Team collaborating with secure technology">
+                            </div>
+                            <div class="position-absolute top-0 end-0 translate-middle p-3 bg-primary text-white rounded-4 shadow-sm">
+                                <div class="fw-semibold text-uppercase small">99.9% uptime</div>
+                                <div class="fw-semibold">Managed by Nexora</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<div class="dropdown">
-					<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-						<symbol id="check2" viewBox="0 0 16 16">
-							<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-						</symbol>
-						<symbol id="circle-half" viewBox="0 0 16 16">
-							<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-						</symbol>
-						<symbol id="moon-stars-fill" viewBox="0 0 16 16">
-							<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-							<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-						</symbol>
-						<symbol id="sun-fill" viewBox="0 0 16 16">
-							<path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-						</symbol>
-					</svg>
+        <section class="py-6 bg-body-tertiary">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="text-uppercase text-primary-emphasis fw-semibold small">Core Services</span>
+                    <h2 class="mt-2 mb-3 fw-bold text-body-emphasis">Expert teams focused on your security and uptime</h2>
+                    <p class="text-body-secondary mx-auto" style="max-width: 640px;">Every Nexora engagement pairs proactive monitoring with automation-first operations so your business stays resilient without expanding headcount.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="h-100 p-4 bg-white bg-opacity-80 rounded-4 shadow-sm">
+                            <div class="mb-3 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                                    <path d="M2.5 6a1 1 0 0 1 1-1h.5V4a4 4 0 1 1 8 0v1h.5a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V6z"/>
+                                </svg>
+                            </div>
+                            <h3 class="fs-4 fw-semibold text-body-emphasis">Cybersecurity Operations</h3>
+                            <p class="text-body-secondary">Managed detection and response, vulnerability scanning, and threat intelligence built for compliance-heavy industries.</p>
+                            <ul class="text-body-secondary ps-3">
+                                <li>Risk assessments & remediation roadmaps</li>
+                                <li>Security awareness programs</li>
+                                <li>Compliance alignment (ISO, SOC2, GDPR)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 p-4 bg-white bg-opacity-80 rounded-4 shadow-sm">
+                            <div class="mb-3 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5V8l2.5 1.5a.5.5 0 0 1-.5.866l-2.75-1.65A.5.5 0 0 1 7.5 8V4.5A.5.5 0 0 1 8 4z"/>
+                                    <path d="M8 3a7 7 0 1 1-4.95 2.05A7 7 0 0 1 8 3zm4.472 3.154a6 6 0 1 0-8.944 0l-.359.36a.5.5 0 1 0 .708.708l.36-.36a6 6 0 0 0 7.526 0l.36.36a.5.5 0 1 0 .708-.708l-.359-.36z"/>
+                                </svg>
+                            </div>
+                            <h3 class="fs-4 fw-semibold text-body-emphasis">Managed IT Infrastructure</h3>
+                            <p class="text-body-secondary">Lifecycle management for networks, endpoints, servers, and collaboration suites with guaranteed response times.</p>
+                            <ul class="text-body-secondary ps-3">
+                                <li>Proactive monitoring and patching</li>
+                                <li>Hardware and software asset management</li>
+                                <li>Help desk support with 24/7 coverage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 p-4 bg-white bg-opacity-80 rounded-4 shadow-sm">
+                            <div class="mb-3 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
+                                    <path d="M8 2a5.53 5.53 0 0 0-4.473 2.326A4.1 4.1 0 0 0 3 4a4 4 0 0 0 0 8h3.5a.5.5 0 0 0 .5-.5V7.707L5.854 9.354a.5.5 0 1 0 .707.707l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.707.708L7 6.293V9.5a.5.5 0 0 0 .5.5H12a3 3 0 0 0 .557-5.953A5.53 5.53 0 0 0 8 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="fs-4 fw-semibold text-body-emphasis">Cloud Automation</h3>
+                            <p class="text-body-secondary">Infrastructure-as-code pipelines and automation that reduce deployment time and eliminate manual drift.</p>
+                            <ul class="text-body-secondary ps-3">
+                                <li>Multi-cloud architecture design</li>
+                                <li>CI/CD and infrastructure automation</li>
+                                <li>Cost optimization insights</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-					<button class="btn btn-primary text-white btn-sm rounded dropdown-toggle d-flex align-items-center"
-						id="bd-theme"
-						type="button"
-						aria-expanded="false"
-						data-bs-toggle="dropdown"
-						aria-label="Toggle theme (auto)">
-						<svg fill="currentColor" class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-						<span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-					</button>
+        <section class="py-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold text-body-emphasis mb-3">Why growing businesses choose Nexora</h2>
+                        <p class="text-body-secondary mb-4">Our mission is to help companies operate securely and efficiently with minimal technical overhead. We operate as an extension of your team, bringing enterprise-grade practices to every engagement.</p>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="badge rounded-pill text-bg-primary bg-opacity-25 text-primary-emphasis px-3 py-2 fw-semibold">24/7</div>
+                                <div>
+                                    <h3 class="h5 fw-semibold mb-1">Always-on coverage</h3>
+                                    <p class="text-body-secondary mb-0">Global monitoring centers keep eyes on your environment at all times with automated escalation paths.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="badge rounded-pill text-bg-primary bg-opacity-25 text-primary-emphasis px-3 py-2 fw-semibold">45%</div>
+                                <div>
+                                    <h3 class="h5 fw-semibold mb-1">Average incident reduction</h3>
+                                    <p class="text-body-secondary mb-0">Clients reduce manual tickets by nearly half after the first quarter thanks to automated remediation.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="badge rounded-pill text-bg-primary bg-opacity-25 text-primary-emphasis px-3 py-2 fw-semibold">Onboarding</div>
+                                <div>
+                                    <h3 class="h5 fw-semibold mb-1">Launch in under 30 days</h3>
+                                    <p class="text-body-secondary mb-0">Structured discovery, documentation, and rollout playbooks ensure you realize value in weeks, not months.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 ms-lg-auto">
+                        <div class="p-4 p-sm-5 bg-body-tertiary rounded-4 shadow-lg">
+                            <h3 class="h4 fw-bold text-body-emphasis mb-3">Ready to modernize your technology?</h3>
+                            <p class="text-body-secondary mb-4">Explore flexible plans designed for startups, scaling teams, and established enterprises.</p>
+                            <a class="btn btn-primary text-white w-100" href="./pricing.html">Explore pricing plans</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-hover end-0 p-1 rounded-3 bg-body-tertiary shadow"
-						style="--bs-dropdown-min-width: 9rem;" 
-						aria-labelledby="bd-theme-text"
-						>
+        <section class="py-6 bg-body-tertiary" id="contact">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold text-body-emphasis mb-3">Let’s design your secure, automated roadmap</h2>
+                        <p class="text-body-secondary mb-4">Tell us about your current tech stack and growth goals. We’ll assemble a phased plan that protects critical assets and streamlines operations.</p>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex gap-3 align-items-center">
+                                <span class="text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
+                                        <path d="M8.941.26a1.5 1.5 0 0 0-1.882 0l-6 4.8A1.5 1.5 0 0 0 0 6.595V13a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6.595a1.5 1.5 0 0 0-.059-.535"/>
+                                        <path d="M15.941 5.76 8 11 0.059 5.76"/>
+                                    </svg>
+                                </span>
+                                <a class="text-decoration-none fw-semibold" href="mailto:hello@nexorait.com">hello@nexorait.com</a>
+                            </div>
+                            <div class="d-flex gap-3 align-items-center">
+                                <span class="text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                        <path d="M3.654 1.328a.678.678 0 0 1 .736-.186l2.522.84c.329.11.531.46.474.803l-.37 2.312a.678.678 0 0 1-.67.566c-.03 0-.061-.003-.092-.01-.746-.153-1.58.066-2.233.72-.653.653-.873 1.487-.72 2.233a.678.678 0 0 1-.555.762l-2.312.37a.678.678 0 0 1-.803-.474l-.84-2.522a.678.678 0 0 1 .186-.736l1.745-1.745a.678.678 0 0 1 .738-.144l1.218.406a1.745 1.745 0 0 0 2.012-.437l.278-.278a1.745 1.745 0 0 0-.437-2.012l-.406-1.218a.678.678 0 0 1 .144-.738z"/>
+                                    </svg>
+                                </span>
+                                <a class="text-decoration-none fw-semibold" href="tel:+15550123456">+1 (555) 012-3456</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 p-sm-5 bg-white rounded-4 shadow-sm">
+                            <form class="row g-3">
+                                <div class="col-12">
+                                    <label for="contactName" class="form-label fw-semibold">Full name</label>
+                                    <input type="text" class="form-control form-control-lg" id="contactName" placeholder="Alex Morgan">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactEmail" class="form-label fw-semibold">Work email</label>
+                                    <input type="email" class="form-control form-control-lg" id="contactEmail" placeholder="you@company.com">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactCompany" class="form-label fw-semibold">Company</label>
+                                    <input type="text" class="form-control form-control-lg" id="contactCompany" placeholder="Your company name">
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactMessage" class="form-label fw-semibold">How can we help?</label>
+                                    <textarea class="form-control form-control-lg" id="contactMessage" rows="4" placeholder="Share your immediate priorities or challenges."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg text-white w-100">Request consultation</button>
+                                </div>
+                                <div class="col-12">
+                                    <small class="text-body-secondary d-block">We respond within one business day. By submitting, you agree to receive updates about Nexora services.</small>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-						<li style="color: var(--bs-tertiary-bg);">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-								class="d-inline-block position-absolute top-0 end-0 translate-middle mt-n1" 
-								viewBox="0 0 16 16">
-								<path class="carret-dropdown-path" d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
-							</svg>
-						</li>
+    <footer class="py-5 bg-body-tertiary border-top">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <a href="./index.html" class="d-inline-flex align-items-center mb-3 text-decoration-none">
+                        <img src="./assets/logo/ChatGPT Image Nov 12, 2025, 04_02_14 PM.png" height="32" alt="Nexora IT Solutions logo">
+                    </a>
+                    <p class="text-body-secondary mb-0">Nexora IT Solutions partners with small and medium businesses to deliver enterprise-grade cybersecurity, managed infrastructure, and automation that scales with demand.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="fw-semibold text-body-emphasis">Company</h5>
+                    <ul class="list-unstyled text-small mt-3">
+                        <li><a class="text-decoration-none text-body-secondary" href="#contact">Contact</a></li>
+                        <li><a class="text-decoration-none text-body-secondary" href="./pricing.html">Pricing</a></li>
+                        <li><a class="text-decoration-none text-body-secondary" href="mailto:careers@nexorait.com">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="fw-semibold text-body-emphasis">Services</h5>
+                    <ul class="list-unstyled text-small mt-3">
+                        <li><a class="text-decoration-none text-body-secondary" href="./pricing.html#essential">Essential</a></li>
+                        <li><a class="text-decoration-none text-body-secondary" href="./pricing.html#premium">Premium</a></li>
+                        <li><a class="text-decoration-none text-body-secondary" href="./pricing.html#advanced">Advanced</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h5 class="fw-semibold text-body-emphasis">Stay updated</h5>
+                    <p class="text-body-secondary mt-3">Join our updates to receive security advisories and infrastructure best practices.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="you@company.com" aria-label="Email">
+                        <button class="btn btn-primary text-white" type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center text-body-secondary small">
+                <span>© <span class="current-year"></span> Nexora IT Solutions. All rights reserved.</span>
+                <div class="d-flex gap-3 mt-3 mt-sm-0">
+                    <a class="text-decoration-none text-body-secondary" href="javascript:;">Privacy</a>
+                    <a class="text-decoration-none text-body-secondary" href="javascript:;">Terms</a>
+                    <a class="text-decoration-none text-body-secondary" href="javascript:;">Status</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-						<li>
-							<button type="button" class="dropdown-item d-flex align-items-center rounded-1" data-bs-theme-value="light" aria-pressed="false">
-								<svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-								Light
-								<svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
-							</button>
-						</li>
-
-						<li>
-							<button type="button" class="dropdown-item d-flex align-items-center rounded-1 my-1" data-bs-theme-value="dark" aria-pressed="false">
-								<svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-								Dark
-								<svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
-							</button>
-						</li>
-
-						<li>
-							<button type="button" class="dropdown-item d-flex align-items-center rounded-1 active" data-bs-theme-value="auto" aria-pressed="true">
-								<svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-								Auto
-								<svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
-							</button>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</div>
-	
-
-	<!-- Demo -->
-	<div class="overflow-hidden py-6">
-		<div class="container">
-			<div class="row gy-5 gx-sm-5 justify-content-center">
-				<div class="col-12 col-lg-6 col-xl-5" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
-					<div class="p-3 p-sm-4 bg-body-tertiary bg-body-secondary-hover rounded-4 rounded-sm-5 position-relative">
-						<div>
-							<img src="./assets/img/screenshots/laptop.jpg" class="img-fluid rounded-1 rounded-sm-3 border" alt="Demo LTR">
-						</div>
-						<h3 class="m-0 mt-4 text-sm fw-medium">
-							<a href="./pricing.html" class="icon-link icon-link-hover text-decoration-none text-body-emphasis text-primary-emphasis-hover text-sm leading-6 fw-semibold stretched-link">
-								Explore LTR Language Showcase
-								<span class="bi align-self-start left-to-right" aria-hidden="true">→</span>
-								<span class="bi align-self-start right-to-left" aria-hidden="true">←</span>
-							</a>
-						</h3>
-						<p class="my-0 text-sm fw-medium leading-6 text-body-tertiary">
-							Left-to-Right Text Direction
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="mt-7 mt-sm-8">
-				<div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-					<div class="alert bg-info bg-opacity-10 d-flex p-3" role="alert">
-						<svg class="bi flex-shrink-0 me-2 text-info-emphasis" fill="currentColor" width="20" height="20" role="img" viewBox="0 0 16 16" aria-label="Info:">
-							<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-						</svg>
-						<div class="ps-1">
-							<h3 class="m-0 fw-semibold text-sm text-info-emphasis">
-								Heads up! Color Mode Options:
-							</h3>
-							<div class="mt-2 text-sm">
-								<p class="m-0 text-info-emphasis">
-									To change the color mode of this template or adjust how they look in different color schemes, please locate the <span class="fst-italic fw-medium">Color Mode Button</span> at the top-right corner of the screen. The button offers three different color mode options: Light, Dark, and Auto.	
-								</p>
-								<hr class="border-info border-opacity-50">
-								<p class="m-0 text-info-emphasis">
-									Happy customizing! 🎨
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- Bootstrap JavaScript: Bundle with Popper -->
-	<script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="./assets/libraries/aos/aos.js"></script>
-	<script src="./assets/js/scripts.js"></script>
-
-
+    <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libraries/aos/aos.js"></script>
+    <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
