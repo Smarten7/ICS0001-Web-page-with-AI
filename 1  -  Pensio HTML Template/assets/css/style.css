@@ -117,6 +117,20 @@ body {
     --bs-btn-active-border-color: #193a9a;
 }
 
+/* Dark mode button fixes for better text contrast */
+[data-bs-theme="dark"] .btn-primary {
+    --bs-btn-bg: #1e40af;
+    --bs-btn-border-color: #1e40af;
+    --bs-btn-hover-bg: #1e3a8a;
+    --bs-btn-hover-border-color: #1e3a8a;
+    --bs-btn-active-bg: #1e3a8a;
+    --bs-btn-active-border-color: #1e3a8a;
+}
+
+[data-bs-theme="dark"] .btn-primary.text-white {
+    color: #ffffff !important;
+}
+
 .bg-body-secondary-hover {
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -162,6 +176,44 @@ html[data-bs-theme="light"] .alert {
 [data-bs-theme="dark"] .expectation-card .badge {
     background: rgba(96, 165, 250, 0.2);
     color: #dbeafe;
+}
+
+/* Dark mode fixes for service cards */
+[data-bs-theme="dark"] .bg-white {
+    background: rgba(30, 41, 59, 0.6) !important;
+}
+
+[data-bs-theme="dark"] .bg-white .text-body-emphasis {
+    color: #f8fafc !important;
+}
+
+[data-bs-theme="dark"] .bg-white .text-body-secondary {
+    color: #cbd5e1 !important;
+}
+
+/* Dark mode fixes for contact section */
+[data-bs-theme="dark"] .bg-body-tertiary {
+    background: rgba(15, 23, 42, 0.8) !important;
+}
+
+[data-bs-theme="dark"] .bg-body-tertiary .text-body-emphasis {
+    color: #f8fafc !important;
+}
+
+[data-bs-theme="dark"] .bg-body-tertiary .text-body-secondary {
+    color: #cbd5e1 !important;
+}
+
+[data-bs-theme="dark"] .bg-body-tertiary .form-label {
+    color: #e2e8f0 !important;
+}
+
+[data-bs-theme="dark"] .bg-body-tertiary a {
+    color: #93c5fd !important;
+}
+
+[data-bs-theme="dark"] .bg-body-tertiary a:hover {
+    color: #bfdbfe !important;
 }
 
 

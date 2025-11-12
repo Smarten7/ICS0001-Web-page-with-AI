@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-bs-theme="auto">
+<head>
+    <script src="./assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="System status and uptime for Nexora IT Solutions services.">
+    <meta name="keywords" content="Nexora IT Solutions, system status, uptime, service status">
+    <meta name="author" content="Nexora IT Solutions">
+    <meta name="generator" content="Bootstrap">
+    <title>System Status | Nexora IT Solutions</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon-16x16.png">
+	<link rel="icon" type="image/x-icon" href="./assets/logo/favicon.ico">
+	<link rel="manifest" href="./assets/logo/site.webmanifest">
+    <link rel="stylesheet" href="./assets/libraries/aos/aos.css">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta property="og:title" content="System Status | Nexora IT Solutions">
+    <meta property="og:description" content="Check the current status of Nexora IT Solutions services and infrastructure.">
+    <meta property="og:image" content="./assets/logo/ChatGPT Image Nov 12, 2025, 04_02_14 PM.png">
+    <meta property="og:url" content="./status.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="spinner-border text-primary p-5" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <header class="py-3">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/logo/ChatGPT Image Nov 12, 2025, 04_02_14 PM.png" height="40" alt="Nexora IT Solutions logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="primaryNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item mt-3 mt-lg-0">
+                        <a class="btn btn-outline-primary btn-sm px-3 fw-semibold" href="./index.html#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="dropdown ms-lg-3 mt-3 mt-lg-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+                        <symbol id="check2" viewBox="0 0 16 16">
+                            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                        </symbol>
+                        <symbol id="circle-half" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+                        </symbol>
+                        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                        </symbol>
+                        <symbol id="sun-fill" viewBox="0 0 16 16">
+                            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                        </symbol>
+                    </svg>
+                    <button class="btn btn-primary text-white btn-sm rounded dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                        <svg fill="currentColor" class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-hover end-0 p-1 rounded-3 bg-body-tertiary shadow" style="--bs-dropdown-min-width: 9rem;" aria-labelledby="bd-theme-text">
+                        <li style="color: var(--bs-tertiary-bg);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="d-inline-block position-absolute top-0 end-0 translate-middle mt-n1" viewBox="0 0 16 16">
+                                <path class="carret-dropdown-path" d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center rounded-1" data-bs-theme-value="light" aria-pressed="false">
+                                <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                                Light
+                                <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center rounded-1 my-1" data-bs-theme-value="dark" aria-pressed="false">
+                                <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                                Dark
+                                <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center rounded-1 active" data-bs-theme-value="auto" aria-pressed="true">
+                                <svg fill="currentColor" class="bi me-2 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                                Auto
+                                <svg fill="currentColor" class="bi ms-auto d-none active-check" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-6 py-lg-8">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h1 class="display-5 fw-bold text-body-emphasis mb-4">System Status</h1>
+                        <p class="text-body-secondary mb-5">Real-time status and uptime monitoring for all Nexora IT Solutions services</p>
+                        
+                        <div class="text-body-secondary">
+                            <div class="alert alert-success d-flex align-items-center mb-5" role="alert">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-circle-fill me-3 flex-shrink-0" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="alert-heading fw-semibold mb-1">All Systems Operational</h4>
+                                    <p class="mb-0">All services are running normally. Last updated: November 12, 2025 at 14:30 UTC</p>
+                                </div>
+                            </div>
+
+                            <h2 class="h4 fw-bold text-body-emphasis mt-5 mb-4">Current Service Status</h2>
+                            
+                            <!-- Cybersecurity Services -->
+                            <div class="card mb-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h3 class="h5 fw-semibold text-body-emphasis mb-0">Cybersecurity Operations</h3>
+                                        <span class="badge bg-success text-white">Operational</span>
+                                    </div>
+                                    <p class="text-body-secondary mb-3 small">Threat detection, vulnerability scanning, and security monitoring services</p>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Threat Intelligence Platform</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.98% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Vulnerability Scanner</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.97% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Security Event Monitoring</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">100% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Incident Response System</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.99% uptime</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Managed IT Infrastructure -->
+                            <div class="card mb-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h3 class="h5 fw-semibold text-body-emphasis mb-0">Managed IT Infrastructure</h3>
+                                        <span class="badge bg-success text-white">Operational</span>
+                                    </div>
+                                    <p class="text-body-secondary mb-3 small">Network management, endpoint monitoring, and IT support services</p>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Network Monitoring</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.96% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Endpoint Management</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.95% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Patch Management System</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.98% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Help Desk Portal</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">100% uptime</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cloud Automation -->
+                            <div class="card mb-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h3 class="h5 fw-semibold text-body-emphasis mb-0">Cloud Automation</h3>
+                                        <span class="badge bg-success text-white">Operational</span>
+                                    </div>
+                                    <p class="text-body-secondary mb-3 small">Infrastructure automation, CI/CD pipelines, and cloud orchestration</p>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">CI/CD Pipeline Service</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.94% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Infrastructure as Code</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.97% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Container Orchestration</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.96% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Cost Optimization Engine</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.99% uptime</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Core Infrastructure -->
+                            <div class="card mb-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h3 class="h5 fw-semibold text-body-emphasis mb-0">Core Infrastructure</h3>
+                                        <span class="badge bg-success text-white">Operational</span>
+                                    </div>
+                                    <p class="text-body-secondary mb-3 small">Essential platform services and infrastructure components</p>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">API Gateway</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.99% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Authentication Service</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">100% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Database Cluster</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.98% uptime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="small">Customer Portal</span>
+                                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">99.97% uptime</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="h4 fw-bold text-body-emphasis mt-5 mb-4">Incident History</h2>
+                            
+                            <!-- No Recent Incidents -->
+                            <div class="card mb-3 border-0 shadow-sm bg-body-tertiary">
+                                <div class="card-body text-center py-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-shield-check text-success mb-3" viewBox="0 0 16 16">
+                                        <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                                        <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                    </svg>
+                                    <h3 class="h5 fw-semibold text-body-emphasis mb-2">No Recent Incidents</h3>
+                                    <p class="text-body-secondary mb-0">All systems have been operating normally for the past 90 days</p>
+                                </div>
+                            </div>
+
+                            <h2 class="h4 fw-bold text-body-emphasis mt-5 mb-4">Scheduled Maintenance</h2>
+                            
+                            <div class="card mb-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <div>
+                                            <h3 class="h6 fw-semibold text-body-emphasis mb-1">Database Infrastructure Upgrade</h3>
+                                            <p class="text-body-secondary mb-2 small">Planned maintenance to upgrade database clusters and improve performance</p>
+                                        </div>
+                                        <span class="badge bg-info text-white">Scheduled</span>
+                                    </div>
+                                    <div class="d-flex gap-4 flex-wrap small text-body-secondary">
+                                        <div>
+                                            <strong>Date:</strong> November 23, 2025
+                                        </div>
+                                        <div>
+                                            <strong>Time:</strong> 02:00 - 04:00 UTC
+                                        </div>
+                                        <div>
+                                            <strong>Duration:</strong> ~2 hours
+                                        </div>
+                                        <div>
+                                            <strong>Impact:</strong> Minimal, some services may experience brief interruptions
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <div>
+                                            <h3 class="h6 fw-semibold text-body-emphasis mb-1">Security Infrastructure Enhancement</h3>
+                                            <p class="text-body-secondary mb-2 small">Deployment of enhanced security monitoring and threat detection capabilities</p>
+                                        </div>
+                                        <span class="badge bg-info text-white">Scheduled</span>
+                                    </div>
+                                    <div class="d-flex gap-4 flex-wrap small text-body-secondary">
+                                        <div>
+                                            <strong>Date:</strong> December 7, 2025
+                                        </div>
+                                        <div>
+                                            <strong>Time:</strong> 01:00 - 03:00 UTC
+                                        </div>
+                                        <div>
+                                            <strong>Duration:</strong> ~2 hours
+                                        </div>
+                                        <div>
+                                            <strong>Impact:</strong> No expected downtime
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="h4 fw-bold text-body-emphasis mt-5 mb-4">Performance Metrics</h2>
+                            
+                            <div class="row g-4 mb-4">
+                                <div class="col-md-4">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <div class="card-body text-center">
+                                            <h3 class="display-4 fw-bold text-primary mb-2">99.97%</h3>
+                                            <p class="text-body-secondary mb-0">Overall Uptime (30 days)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <div class="card-body text-center">
+                                            <h3 class="display-4 fw-bold text-success mb-2">145ms</h3>
+                                            <p class="text-body-secondary mb-0">Average Response Time</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <div class="card-body text-center">
+                                            <h3 class="display-4 fw-bold text-info mb-2">0</h3>
+                                            <p class="text-body-secondary mb-0">Active Incidents</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="h4 fw-bold text-body-emphasis mt-5 mb-4">Support Availability</h2>
+                            
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-4">
+                                            <h3 class="h6 fw-semibold text-body-emphasis mb-3">Essential Plan</h3>
+                                            <ul class="list-unstyled text-body-secondary small mb-0">
+                                                <li class="mb-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                                    </svg>
+                                                    Email Support
+                                                </li>
+                                                <li class="mb-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                                    </svg>
+                                                    24-hour Response
+                                                </li>
+                                                <li>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                                    </svg>
+                                                    Business Hours (9am-6pm)
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3 class="h6 fw-semibold text-body-emphasis mb-3">Premium Plan</h3>
+                                            <ul class="list-unstyled text-body-secondary small mb-0">
+                                                <li class="mb-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                                    </svg>
+                                                    Priority Support
+                                                </li>
+                                                <li class="mb-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                                    </svg>
+                                                    8-hour Response
+                                                </li>
+                                                <li>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                                    </svg>
+                                                    Extended Hours (7am-10pm)
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h3 class="h6 fw-semibold text-body-emphasis mb-3">Advanced Plan</h3>
+                                            <ul class="list-unstyled text-body-secondary small mb-0">
+                                                <li class="mb-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                                    </svg>
+                                                    24/7 Priority Support
+                                                </li>
+                                                <li class="mb-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                                    </svg>
+                                                    2-hour Response
+                                                </li>
+                                                <li>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                                    </svg>
+                                                    Round-the-Clock
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="h4 fw-bold text-body-emphasis mt-5 mb-4">Stay Informed</h2>
+                            
+                            <div class="card border-0 shadow-sm bg-body-tertiary">
+                                <div class="card-body">
+                                    <h3 class="h5 fw-semibold text-body-emphasis mb-3">Subscribe to Status Updates</h3>
+                                    <p class="text-body-secondary mb-4">Get real-time notifications about system status, scheduled maintenance, and incidents via email or SMS.</p>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <a href="mailto:support@nexorait.com" class="btn btn-primary text-white w-100">Subscribe via Email</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="./index.html#contact" class="btn btn-outline-primary w-100">Contact Support</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info mt-5" role="alert">
+                                <div class="d-flex align-items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle-fill me-3 flex-shrink-0" viewBox="0 0 16 16">
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                    </svg>
+                                    <div>
+                                        <h4 class="alert-heading fw-semibold mb-2">Questions About System Status?</h4>
+                                        <p class="mb-0">If you're experiencing issues or have questions about our service status, please contact our support team at <a href="mailto:support@nexorait.com" class="alert-link">support@nexorait.com</a> or call <a href="tel:+15550123456" class="alert-link">+1 (555) 012-3456</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5 bg-body-tertiary border-top">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <a href="./index.html" class="d-inline-flex align-items-center mb-3 text-decoration-none">
+                        <img src="./assets/logo/ChatGPT Image Nov 12, 2025, 04_02_14 PM.png" height="32" alt="Nexora IT Solutions logo">
+                    </a>
+                    <p class="text-body-secondary mb-0">Nexora IT Solutions partners with small and medium businesses to deliver enterprise-grade cybersecurity, managed infrastructure, and automation that scales with demand.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="fw-semibold text-body-emphasis">Company</h5>
+                    <ul class="list-unstyled text-small mt-3">
+                        <li><a class="text-decoration-none text-body-secondary" href="./index.html#contact">Contact</a></li>
+                        <li><a class="text-decoration-none text-body-secondary" href="./pricing.html">Pricing</a></li>
+                        <li><a class="text-decoration-none text-body-secondary" href="mailto:careers@nexorait.com">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="fw-semibold text-body-emphasis">Services</h5>
+                    <ul class="list-unstyled text-small mt-3">
+                        <li><a class="text-decoration-none text-body-secondary" href="./pricing.html#essential">Essential</a></li>
+                        <li><a class="text-decoration-none text-body-secondary" href="./pricing.html#premium">Premium</a></li>
+                        <li><a class="text-decoration-none text-body-secondary" href="./pricing.html#advanced">Advanced</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h5 class="fw-semibold text-body-emphasis">Stay updated</h5>
+                    <p class="text-body-secondary mt-3">Join our updates to receive security advisories and infrastructure best practices.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="you@company.com" aria-label="Email">
+                        <button class="btn btn-primary text-white" type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center text-body-secondary small">
+                <span>© <span class="current-year"></span> Nexora IT Solutions. All rights reserved.</span>
+                <div class="d-flex gap-3 mt-3 mt-sm-0">
+                    <a class="text-decoration-none text-body-secondary" href="./privacy.html">Privacy</a>
+                    <a class="text-decoration-none text-body-secondary" href="./terms.html">Terms</a>
+                    <a class="text-decoration-none text-body-secondary" href="./status.html">Status</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libraries/aos/aos.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
